@@ -30,6 +30,8 @@ tags:
 ## 问题
 
 - retry 时自定义变量无法被替换
-- 
+- 批量插入数据，使用自定义变量，生成的数据未识别。
+
+![设置变量](/imgs/post/postman_variable2.png)
 
 
