@@ -10,10 +10,9 @@ tags:
  - welcome
 ---
 
-# 使用Postman的runner批量插入数据
 
 
-## 起因
+## 问题
 
 ## 第一步，创建Collections
 
