@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Furong's note
 ---
 
 <div id="articles">
