@@ -1,14 +1,16 @@
-<nav id="my-menu">
-  <div>
-    <p>{{ site.title }}</p>
-
-    <ul class="pages">
-      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> 首页</a></li>
-      <li><a href="{{ site.baseurl }}/posts/"><i class="fa fa-archive"></i> 全部文章 </a></li>
-      <li><a href="{{ site.baseurl }}/search/"><i class="fa fa-search"></i> 搜索 </a></li>
-    </ul>
-
-    {% include social_links.html %}
-  </div>
-</nav>
-<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
+ <div class="header">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                 {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
+                 <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                 </li> 
+                 {% endfor %}
+                 <li> <a href="https://github.com/brianmaierjr/long-haul" target="_blank">GitHub</a></li>
+                 <li><a href="https://github.com/brianmaierjr/long-haul/archive/master.zip">Download Theme</a></li>
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->

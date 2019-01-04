@@ -1,38 +1,28 @@
-# Site settings
-title: "Furong's Note"
-email: liangfurong18622@gmail.com
-description: "A note site ."
+title: Furong's Note
+description: 记录一些工作中遇到的技术问题
+
+url: https://lfrmm.github.com
 baseurl: ""
-url: "http://carte-noire.jacobtomlinson.co.uk/"
-title_description: "记录一些工作中遇到的技术问题"
-title_image: "https://lfrmm.github.io/imgs/avator.jpg"
-google_analytics: "UA-20365477-04"
-disqus_account: lfrmm
-github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
-post_limit: 10
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Social usernames/URLs
-twitter_username: 
-github_username:  lfrmm
-instagram_username: 
-reddit_username: 
-linkedin_link: 
-google_plus_link: 
-stackoverflow_link:
-xing_link:
-facebook_link:
-
-# Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
-
-# Build settings
 markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+navigation:
+ - title: 首页
+   url: /index.html
+ - title: 关于我
+   url: /about
+ - title: 留言
+   url: /contact
 
-permalink: pretty
-exclude: [vendor]
+social:
+   github: lfrmm
+   twitter: 
+   facebook: 
+   email: lfrmm18622@gmail.com
+
+google_analytics: "UA-582634161-1"

@@ -1,49 +1,26 @@
 ---
 layout: default
-make-smaller-titles: true
+title: Long Haul
 ---
 
-
-<div class="container-fluid index">
-    <div class="row">
-
-        <div class="col-md-12 main content-panel">
-
-            <div class="gravatar">
-                <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
-            </div>
-
-            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
-
-            <div class="author-text">
-                {{ site.title_description }}
-            </div>
-
-            {% include social_links.html %}
-          </div>
-          <div class="col-md-12 main content-panel">
-
-            <div class="articles">
-
-              <h2>最新文章</h2>
-
-              <ul>
-                  {% for post in site.posts limit: site.post_limit %}
-
-                      <li>
-                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-                      </li>
-
-                  {% endfor %}
-                  <li>
-                      <small><i><a href="{{ site.baseurl }}/posts/">更多内容...</a></i></small>
-                  </li>
-              </ul>
-
-            </div>
-
-        </div>
-
-    </div>
+<div class="home" id="home">
+  <h1 class="pageTitle">Recent Posts</h1>
+  <ul class="posts noList">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
+    {% endif %}
+  </div>
 </div>
