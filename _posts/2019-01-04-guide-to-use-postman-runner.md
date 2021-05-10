@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      使用Postman的runner批量插入数据
+title:      使用Postman的runner批量插入数据构造随机数据
 date:       2019-01-03 21:48
 author:     Furong
 summary:    开始学习
@@ -18,7 +18,7 @@ tags:
 
 ## 第二步，设置变量
 
-如下图 ，变量格式 ```{{变量名}}```
+如下图 ，变量格式 ```{ { 变量名 } }```
 
 ![设置变量](/imgs/post/postman_variable.png)
 

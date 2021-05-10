@@ -1,5 +1,5 @@
 title: Furong's Note
-description: 记录一些工作中遇到的技术问题
+description: 记录一些工作中遇到的技术问题,我的笔记本.
 
 url: https://lfrmm.github.com
 baseurl: ""
@@ -18,7 +18,7 @@ navigation:
    url: /about
 
 social:
-   github: lfrmm
+   github: liangfurong
    twitter: 
    facebook: 
    email: lfrmm18622@gmail.com
