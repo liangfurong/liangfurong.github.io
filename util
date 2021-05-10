@@ -1,10 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 #部署工具
 # miwenshu @ 2021.5
 
 NAME=jk_lfr
 PORT=4001
+CONTINER_NAME=${NAME//\//-}
 DIR=$(cd "$(dirname "$0")";pwd)
 
 doHelp() {
@@ -34,7 +35,7 @@ doPull(){
 doServ() {
     echo "using ${NAME} , port=${PORT}"
     docker run -it  --rm \
-        --name=${NAME}  \
+        --name=${CONTINER_NAME}  \
         --volume="$DIR:/web" \
         --publish "${PORT}:4000" \
         ${NAME} \
@@ -44,7 +45,7 @@ doServ() {
 doBuild(){
     echo "using ${NAME} , dir = ${DIR}"
     docker run  --rm \
-        --name=${NAME}  \
+        --name=${CONTINER_NAME}  \
         --volume="$DIR:/web" \
         ${NAME} \
         /usr/local/bundle/bin/jekyll build --drafts --future -V
@@ -54,7 +55,7 @@ doBuild(){
 doIndex() {
     echo "using ${NAME} , dir=${DIR}"
     docker run  --rm \
-        --name=${NAME}  \
+        --name=${CONTINER_NAME}  \
         --volume="$DIR:/web" \
         -e "ALGOLIA_API_KEY=$ALGOLIA_API_KEY" \
         ${NAME} \
