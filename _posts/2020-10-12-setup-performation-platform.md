@@ -6,6 +6,8 @@ author:     Furong
 summary:    公司需要搭建一个自动化测试平台,动手搭建一个性能可视化监测平台
 categories: 自动化测试
 thumbnail:  heart
+color: '#000'
+background: /imgs/bg/play.jpg
 tags:
  - nmon
  - docker
@@ -15,10 +17,14 @@ tags:
 ## 方案,服务器规划
 
 ```sh
-这是代码
+/bin/sh build
 ````
 
 正常内容
+
+>
+>  注意事项
+>
 
 **加粗**
 
