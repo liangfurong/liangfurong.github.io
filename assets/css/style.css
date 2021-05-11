@@ -195,20 +195,20 @@ body .intro {
 }
 
 .h2,h2 {
-	font-size: 1.6em;
+	font-size: 1.5em;
 	line-height: 1.2
 }
 
 @media (min-width:43.75em) {
 	.h2,h2 {
-		font-size: 1.4em;
+		font-size: 1.25em;
 		line-height: 1.25
 	}
 }
 
 @media (min-width:56.25em) {
 	.h2,h2 {
-		font-size: 2.25em;
+		font-size: 1.5em;
 		line-height: 1.25
 	}
 }
@@ -220,14 +220,14 @@ body .intro {
 
 @media (min-width:43.75em) {
 	.h3,h3 {
-		font-size: 1.25em;
+		font-size: 1.15em;
 		line-height: 1.25
 	}
 }
 
 @media (min-width:56.25em) {
 	.h3,h3 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		line-height: 1.25
 	}
 }
@@ -244,14 +244,14 @@ body .intro {
 }
 
 blockquote {
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 1.25;
 	padding: 0
 }
 
 @media (min-width:43.75em) {
 	blockquote {
-		font-size: 1.5em;
+		font-size: 1em;
 		line-height: 1.45833333
 	}
 }
@@ -719,7 +719,7 @@ dd {
 }
 
 .post .highlight,.post img {
-	margin-bottom: 2rem
+	margin-bottom: 1rem
 }
 
 .post .highlight {
@@ -1012,7 +1012,7 @@ dd {
 	}
 
 	.post .pageTitle,.post dl,.post h1,.post h2,.post h3,.post h4,.post h5,.post h6,.post ol,.post p,.post ul {
-		width: 75%;
+		width: 100%;
 		float: none;
 		margin: 0 auto 2rem
 	}
@@ -1086,10 +1086,14 @@ dd {
 
 @media only screen and (min-width:1200px) {
 	body {
-		font-size: 115%
+		font-size: 110%
 	}
 
 	.container {
 		max-width: 1200px
 	}
+}
+
+.highlighter-rouge {
+	width:100%;
 }
