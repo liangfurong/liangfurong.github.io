@@ -25,3 +25,29 @@ social:
    email: lfrmm18622@gmail.com
 
 google_analytics: "UA-582634161-1"
+
+exclude:
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "node_modules",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+    "_tools",
+    "publish.sh",
+    "run.sh",
+    "serv.sh",
+    "update_index.sh",
+    "publish_index.sh",
+    "publish.sh",
+    "build.sh",
+    "Dockerfile",
+  ]
