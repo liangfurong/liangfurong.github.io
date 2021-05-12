@@ -24,12 +24,12 @@ doHelp() {
 
 doImage(){
     docker build -t ${NAME}  ./  
-    echo  "\033[32m image build success \033[0m"
+    echo -e  "\033[32m image build success \033[0m"
 }
 
 doPull(){
     git -C $DIR pull
-    echo  "\033[32m pull success \033[0m"
+    echo -e  "\033[32m pull success \033[0m"
 }
 
 doServ() {
@@ -49,7 +49,7 @@ doBuild(){
         --volume="$DIR:/web" \
         ${NAME} \
         /usr/local/bundle/bin/jekyll build --drafts --future -V
-     echo "\033[32m site build success \033[0m"
+     echo -e "\033[32m site build success \033[0m"
 }
 
 doIndex() {
@@ -60,7 +60,7 @@ doIndex() {
         -e "ALGOLIA_API_KEY=$ALGOLIA_API_KEY" \
         ${NAME} \
         /usr/local/bundle/bin/jekyll algolia
-     echo "\033[32m algolia upload success \033[0m"
+     echo -e "\033[32m algolia upload success \033[0m"
 }
 
 doCommand() {

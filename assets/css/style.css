@@ -227,7 +227,7 @@ body .intro {
 
 @media (min-width:56.25em) {
 	.h3,h3 {
-		font-size: 1.2em;
+		font-size: 1.4em;
 		line-height: 1.25
 	}
 }
@@ -949,7 +949,7 @@ dd {
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
-		max-width: 800px;
+		max-width: 1200px;
 		overflow: hidden
 	}
 
@@ -1067,7 +1067,7 @@ dd {
 
 	.footer .container {
 		padding: 1rem 0;
-		max-width: 800px
+		max-width: 1200px;
 	}
 
 	.contactContent {
