@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Furong
-background: /imgs/bg/erhai1.jpg
+background: /imgs/bg/any.jpg
 ---
 
 <div class="post">
