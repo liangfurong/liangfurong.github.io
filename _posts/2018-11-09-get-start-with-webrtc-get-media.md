@@ -3,7 +3,7 @@ layout:     post
 title:      "WebRTC技术简介-获取媒体"
 date:       2018-11-09 15:31:00
 author:     "Vincent"
-header-img:  "img/post-bg-webrtc.jpg"
+background:  "/imgs/bg/sea.jpg"
 catalog: true
 tags:
     - webrtc
